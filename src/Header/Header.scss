@@ -1,24 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Rose:wght@300;400;500;600;700&display=swap");
+
 .header__btn {
   background: linear-gradient(90deg, #a02279 11.45%, #a02279 11.45%);
   border-radius: 10px;
-  flex: 0.5;
+  flex: 10%;
   padding: 10px;
-  /* justify-content: center; */
   text-align: center;
+  text-decoration: none;
+  color: #fff;
 }
 
 .nav {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  padding: 2rem;
 }
 
 .header__logo {
-  flex: 1;
+  flex: 10%;
 }
 
 .header__ul {
-  flex: 1.5;
+  flex: 50%;
   display: flex;
   list-style-type: none;
   justify-content: space-around;

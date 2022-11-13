@@ -15,17 +15,17 @@ function Header(props) {
           <a href="home">Home</a>
         </li>
         <li>
-          <a href="about">About</a>
+          <a href="about">Place to stay</a>
         </li>
         <li>
-          <a href="place">The Place</a>
+          <a href="place">NFTS</a>
         </li>
         <li>
-          <a href="btn">button</a>
+          <a href="community">Community</a>
         </li>
       </ul>
       <a href="btn" className="header__btn">
-        Connect
+        Connect wallet
       </a>
     </nav>
   );

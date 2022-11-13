@@ -1,0 +1,33 @@
+.nft {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4rem 6rem;
+  background-color: #a02279;
+  color: #fff;
+}
+
+.nft-heading {
+  font-size: 4rem;
+  padding-bottom: 3rem;
+}
+
+.nft-text {
+  width: 40%;
+}
+
+.nft-img {
+  width: 55%;
+}
+
+.nft-info {
+  font-size: 2rem;
+  padding-bottom: 4rem;
+  line-height: 1.8;
+}
+
+.nft-btn {
+  border: none;
+  background-color: #fff;
+  color: #a02279;
+}
