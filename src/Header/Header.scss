@@ -1,0 +1,34 @@
+.header__btn {
+  background: linear-gradient(90deg, #a02279 11.45%, #a02279 11.45%);
+  border-radius: 10px;
+  flex: 0.5;
+  padding: 10px;
+  /* justify-content: center; */
+  text-align: center;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__logo {
+  flex: 1;
+}
+
+.header__ul {
+  flex: 1.5;
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+  /* margin-right: 1rem; */
+}
+
+.header__ul li {
+  text-decoration: none;
+}
+.header__ul li a {
+  text-decoration: none;
+  color: #333;
+}
