@@ -15,7 +15,7 @@ function Nft(props) {
         <button className="nft-btn cta">Learn more</button>
       </div>
       <div className="nft-img">
-        <NftImg />
+        <NftImg className="nft-img" />
       </div>
     </section>
   );

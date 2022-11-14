@@ -1,12 +1,18 @@
-import React from "react";
-// import { ReactComponent as Empty_Aggregator } from '@/assets/svgs/empty_aggregators.svg'
+import React, { useState } from "react";
 import "./Header.scss";
 
 import { ReactComponent as Meta } from "../asset/meta.svg";
+import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 
 function Header(props) {
+  const [showNav, setShowNav] = useState(false);
+
+  const handleNav = () => {
+    setShowNav(!showNav);
+    console.log(showNav);
+  };
   return (
-    <nav className="nav">
+    <nav className={`nav ${showNav ? "nav-open" : ""}`}>
       <div className="header__logo">
         <Meta />
       </div>
@@ -27,6 +33,10 @@ function Header(props) {
       <a href="btn" className="header__btn">
         Connect wallet
       </a>
+      <button class="btn-mobile-nav">
+        <AiOutlineMenu className="menu" onClick={handleNav} />
+        <AiOutlineClose className="close" onClick={handleNav} />
+      </button>
     </nav>
   );
 }

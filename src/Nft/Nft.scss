@@ -31,3 +31,20 @@
   background-color: #fff;
   color: #a02279;
 }
+
+@media screen and (max-width: 59em) {
+  .nft {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4rem 6rem;
+    background-color: #a02279;
+    color: #fff;
+    flex-direction: column;
+  }
+
+  .nft-img,
+  .nft-text {
+    width: 80%;
+  }
+}
