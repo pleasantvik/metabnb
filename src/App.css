@@ -43,8 +43,14 @@ body {
     z-index: 999;
   }
 
+  .connect {
+    margin-left: 0;
+  }
+
   .nav {
-    background-color: rgba(255, 255, 255, 0.9);
+    /* background-color: rgba(255, 255, 255, 0.9); */
+    background-color: #fdf2e9;
+
     position: absolute;
     top: 0;
     left: 0;

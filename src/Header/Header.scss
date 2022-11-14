@@ -4,7 +4,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #fdf2e9;
+  // background-color: #fdf2e9;
 
   position: relative;
 
@@ -50,8 +50,13 @@
 
   border: none;
   cursor: pointer;
+  margin-left: 20rem;
 }
-
+@media screen and (max-width: 59em) {
+  .connect {
+    margin-left: 0;
+  }
+}
 .connect,
 .nav__link.cta:link,
 .cta:visited {

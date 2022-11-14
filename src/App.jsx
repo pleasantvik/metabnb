@@ -13,18 +13,18 @@ import Community from "./Pages/Community";
 import Metaverse from "./Pages/Metaverse";
 
 function App() {
-  const [cartIsShown, setCartIsShown] = useState(false);
+  const [modalIsOpen, setModalIsOpen] = useState(false);
 
-  const showCartHandler = () => {
-    setCartIsShown(true);
+  const showModalHandler = () => {
+    setModalIsOpen(true);
   };
 
-  const hideCartHandler = () => {
-    setCartIsShown(false);
+  const hideModalHandler = () => {
+    setModalIsOpen(false);
   };
   return (
-    <div className="containe">
-      <Header onOpen={showCartHandler} />
+    <div>
+      <Header onOpen={showModalHandler} />
       <main>
         <Switch>
           <Route exact path="/">
@@ -45,9 +45,9 @@ function App() {
         </Switch>
       </main>
       <Footer />
-      {cartIsShown && (
-        <Modal onClose={hideCartHandler}>
-          <h1 onClick={hideCartHandler}>Hello</h1>
+      {modalIsOpen && (
+        <Modal onClose={hideModalHandler}>
+          <h1 onClick={hideModalHandler}>Hello</h1>
           <p>I am a modal window</p>
         </Modal>
       )}
