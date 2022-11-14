@@ -6,7 +6,9 @@ function Card(props) {
   return (
     <div className="card">
       <div className="card-details">
-        <div className="card-img">{props.img}</div>
+        <div className="card-img" style={{ padding: "1rem" }}>
+          <img src={props.img} alt="metaverse " />
+        </div>
         <div className="text-grid">
           <p className="name">Desert King</p>
           <p className="price">1MBT per night</p>

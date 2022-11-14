@@ -1,28 +1,32 @@
 import React from "react";
 import "./Adventure.scss";
 import Card from "../Card/Card";
-import { ReactComponent as Grid1 } from "../asset/grid-img-1.svg";
-import { ReactComponent as Grid2 } from "../asset/grid-img-2.svg";
-import { ReactComponent as Grid3 } from "../asset/grid-img-3.svg";
-import { ReactComponent as Grid4 } from "../asset/grid-img-4.svg";
-import { ReactComponent as Grid5 } from "../asset/grid-img-5.svg";
-import { ReactComponent as Grid6 } from "../asset/grid-img-6.svg";
-import { ReactComponent as Grid7 } from "../asset/grid-img-7.svg";
-import { ReactComponent as Grid8 } from "../asset/grid-img-8.svg";
+import Grid1 from "../asset/img-1.png";
+import Grid2 from "../asset/img-2.png";
+import Grid3 from "../asset/img-3.png";
+import Grid4 from "../asset/img-4.png";
+import Grid5 from "../asset/img-5.png";
+import Grid6 from "../asset/img-6.png";
+import Grid8 from "../asset/img-8.png";
+import Grid7 from "../asset/img-7.png";
 
 function Adventure(props) {
   return (
-    <section className="adventure__inspiration">
-      <h1 className="secondary-heading">Inspiration for your next Adventure</h1>
-      <div className="grid">
-        <Card img={<Grid1 style={{ padding: "1rem" }} />} />
-        <Card img={<Grid2 style={{ padding: "1rem" }} />} />
-        <Card img={<Grid3 style={{ padding: "1rem" }} />} />
-        <Card img={<Grid4 style={{ padding: "1rem" }} />} />
-        <Card img={<Grid5 style={{ padding: "1rem" }} />} />
-        <Card img={<Grid6 style={{ padding: "1rem" }} />} />
-        <Card img={<Grid7 style={{ padding: "1rem" }} />} />
-        <Card img={<Grid8 style={{ padding: "1rem" }} />} />
+    <section className="section adventures adventure__inspiration">
+      <div className="container">
+        <h1 className="secondary-heading">
+          Inspiration for your next Adventure
+        </h1>
+        <div className="grid">
+          <Card img={Grid1} />
+          <Card img={Grid2} />
+          <Card img={Grid3} />
+          <Card img={Grid4} />
+          <Card img={Grid5} />
+          <Card img={Grid6} />
+          <Card img={Grid7} />
+          <Card img={Grid8} />
+        </div>
       </div>
     </section>
   );

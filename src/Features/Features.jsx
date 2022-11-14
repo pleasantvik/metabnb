@@ -1,17 +1,20 @@
 import React from "react";
-import { ReactComponent as Token } from "../asset/token-logo.svg";
-import { ReactComponent as Metamask } from "../asset/metamask-logo.svg";
-import { ReactComponent as Opensea } from "../asset/opensea-logo.svg";
+import "./Feature.scss";
+import Token from "../asset/mbtoken.png";
+import Metamask from "../asset/metamask.png";
+import Opensea from "../asset/opensea.png";
 
 function Features(props) {
   return (
-    <div className="featuredIn">
-      <div class="features">
-        <Token />
-        <Metamask />
-        <Opensea />
+    <section class="section-featured section">
+      <div class="container">
+        <div class="logos">
+          <img src={Token} alt="mbToken logo" />
+          <img src={Metamask} alt="metamask logo" />
+          <img src={Opensea} alt="Opensea logo" />
+        </div>
       </div>
-    </div>
+    </section>
   );
 }
 
