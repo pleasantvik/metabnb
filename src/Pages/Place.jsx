@@ -1,6 +1,6 @@
 import React from "react";
+import "./Places.css";
 import Card from "../Card/Card";
-import "../Adventure/Adventure.scss";
 import Grid1 from "../asset/img-1.png";
 import Grid2 from "../asset/img-2.png";
 import Grid3 from "../asset/img-3.png";
@@ -17,25 +17,41 @@ import Grid13 from "../asset/img-13.png";
 import Grid14 from "../asset/img-14.png";
 import Grid15 from "../asset/img-15.png";
 import Grid16 from "../asset/img-16.png";
+import { ReactComponent as Settings } from "../asset/setting.svg";
+
 function Place(props) {
   return (
-    <div className="grid">
-      <Card img={Grid6} />
-      <Card img={Grid7} />
-      <Card img={Grid8} />
-      <Card img={Grid9} />
-      <Card img={Grid1} />
-      <Card img={Grid2} />
-      <Card img={Grid3} />
-      <Card img={Grid4} />
-      <Card img={Grid5} />
-      <Card img={Grid10} />
-      <Card img={Grid11} />
-      <Card img={Grid12} />
-      <Card img={Grid13} />
-      <Card img={Grid14} />
-      <Card img={Grid15} />
-      <Card img={Grid16} />
+    <div className="container">
+      <ul className="miniNav">
+        <li className="mininav-list">Resturant</li>
+        <li className="mininav-list">Cottage</li>
+        <li className="mininav-list">Castle</li>
+        <li className="mininav-list">Fantast city</li>
+        <li className="mininav-list">Beach</li>
+        <li className="mininav-list">Carbins</li>
+        <li className="mininav-list">Off-gird</li>
+        <li className="mininav-list">Farm</li>
+        <Settings />
+      </ul>
+
+      <div className="grid" style={{ marginBottom: "2rem" }}>
+        <Card img={Grid6} />
+        <Card img={Grid7} />
+        <Card img={Grid8} />
+        <Card img={Grid9} />
+        <Card img={Grid1} />
+        <Card img={Grid2} />
+        <Card img={Grid3} />
+        <Card img={Grid4} />
+        <Card img={Grid5} />
+        <Card img={Grid10} />
+        <Card img={Grid11} />
+        <Card img={Grid12} />
+        <Card img={Grid13} />
+        <Card img={Grid14} />
+        <Card img={Grid15} />
+        <Card img={Grid16} />
+      </div>
     </div>
   );
 }

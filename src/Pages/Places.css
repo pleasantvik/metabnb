@@ -1,0 +1,8 @@
+.miniNav {
+  display: flex;
+  list-style: none;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 2rem;
+}

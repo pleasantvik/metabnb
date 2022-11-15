@@ -10,17 +10,13 @@ function Header(props) {
 
   const handleNav = () => {
     setShowNav(!showNav);
-    console.log(showNav);
   };
-  // const connectWallet = () => {
-  //   setShowNav(!showNav);
-  //   props.onOpen();
-  // };
+
   return (
     <header className={`header ${showNav ? "nav-open" : ""}`}>
-      <a href="/" className="header__logo">
+      <Link to="/" className="header__logo">
         <img src={metaLogo} alt="metabnb logo" className="logo" />
-      </a>
+      </Link>
       <nav className={`nav `}>
         <ul className="nav__list">
           <li>
@@ -50,8 +46,26 @@ function Header(props) {
       </nav>
 
       <button class="btn-mobile-nav">
-        <AiOutlineMenu className="menu" onClick={handleNav} />
-        <AiOutlineClose className="close" onClick={handleNav} />
+        <AiOutlineMenu
+          style={{
+            height: "4rem",
+            width: "4rem",
+            border: "none",
+            outline: "none",
+          }}
+          className="menu"
+          onClick={handleNav}
+        />
+        <AiOutlineClose
+          style={{
+            height: "4rem",
+            width: "4rem",
+            border: "none",
+            outline: "none",
+          }}
+          className="close"
+          onClick={handleNav}
+        />
       </button>
     </header>
   );

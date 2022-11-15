@@ -11,6 +11,10 @@ import { Modal } from "./Modal/Modal";
 import { Route, Switch } from "react-router-dom";
 import Community from "./Pages/Community";
 import Metaverse from "./Pages/Metaverse";
+import { ReactComponent as CloseIcon } from "./asset/closeIcon.svg";
+import { ReactComponent as MeatmaskIcon } from "./asset/metamaskLogo.svg";
+import { ReactComponent as Chevron } from "./asset/chevron.svg";
+import walletimg from "./asset/wallectimg.png";
 
 function App() {
   const [modalIsOpen, setModalIsOpen] = useState(false);
@@ -47,8 +51,36 @@ function App() {
       <Footer />
       {modalIsOpen && (
         <Modal onClose={hideModalHandler}>
-          <h1 onClick={hideModalHandler}>Hello</h1>
-          <p>I am a modal window</p>
+          <div className="modal-heading">
+            <h2 className="title">Connect Wallet</h2>
+            <CloseIcon
+              onClick={hideModalHandler}
+              style={{ cursor: "pointer" }}
+            />
+          </div>
+          <span className="sub-title">Choose your preffered wallet:</span>
+          <div className="wallet-type">
+            <div className="wallet-box">
+              <div>
+                <MeatmaskIcon />
+                <p className="btn-text">Metamask</p>
+              </div>
+              <Chevron />
+            </div>
+          </div>
+          <div className="wallet-type">
+            <div className="wallet-box">
+              <div>
+                <img
+                  src={walletimg}
+                  alt="walleticon"
+                  // style={{ marginRight: "1rem" }}
+                />
+                <p className="btn-text">WalletConnect</p>
+              </div>
+              <Chevron />
+            </div>
+          </div>
         </Modal>
       )}
     </div>
